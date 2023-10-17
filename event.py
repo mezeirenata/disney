@@ -6,8 +6,8 @@ def event_eldont(player_x, player_y):
         case 1:
             match player_y:
                 case 1:
-                    event = 0
-                    #semmi
+                    event = 25
+                    #Stitch
                 case 2:
                     event = 10
                     #miklós patkány
@@ -25,19 +25,21 @@ def event_eldont(player_x, player_y):
                     # szél
                 case 7:
                     event = 19
-                    #DR Simán prof.
+                    #Dr. Simán prof.
                 case 8:
-
+                    event = 20
+                    #Barátnő
                 case 9:
-
+                    event = 24
+                    # Lajcsi király
                 case 10:
                     event = 28
                     #Jabba the hutt
         case 2:
             match player_y:
                 case 1:
-                    event = 0
-                    #semmi
+                    event = -1
+                    #spawn
                 case 2:
                     event = 2
                     #bohoc
@@ -57,9 +59,11 @@ def event_eldont(player_x, player_y):
                     event = 17
                     #shrek
                 case 8:
-
+                    event = 21 
+                    #Boba a dagadt
                 case 9:
-
+                    event = 27
+                    #Darth VÖDÖR
                 case 10:
                     event = 30
                     #kastély
@@ -85,11 +89,13 @@ def event_eldont(player_x, player_y):
                     #kalóz hajo
                 case 7:
                     event = 18
-                    # DR Kocsis Ákos
+                    # Dr. Kocsis Ákos
                 case 8:
-
+                    event = 22 
+                    # Rosz csont jack
                 case 9:
-
+                    event = 23
+                    # Mici mackó
                 case 10:
                     event = 29
                     # Blaha Lujza tér
