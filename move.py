@@ -1,5 +1,3 @@
-
-
 def move_x(x_move,x):
     x += x_move
     return x
