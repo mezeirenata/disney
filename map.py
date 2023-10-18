@@ -27,9 +27,6 @@ def map_igen(player_x, player_y):
 
         elif asd == "s" and player_y != y_max:
             player_y = move.move_y(1, player_y)
-
-        elif asd == "w" and player_y != 1:
-            player_y = move.move_y(-1, player_y)
         os.system("cls")
         map_rajzol(player_x,player_y)
 map_igen(player_x, player_y)
