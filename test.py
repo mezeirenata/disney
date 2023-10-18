@@ -7,8 +7,11 @@ def asd(penz, hp):
 penzstr= asd(penz, hp)
 if "p" in penzstr:
     string = penzstr.removeprefix("p")
-    print(f"Penz: {string}")
+    print(f"Pénz: {string}")
 elif "h" in penzstr:
     string = penzstr.removeprefix("h")
-    print(f"hp: {string}")
+    print(f"Életerő: {string}")
+elif "e" in penzstr:
+    string = penzstr.removeprefix("e")
+    print(f"Energia: {string}")
 
