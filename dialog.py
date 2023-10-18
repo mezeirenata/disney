@@ -55,7 +55,7 @@ def dialog_print(arany, player_HP, player_x, player_y):
         case 3:
             print("Egy térre érkezel és 3 figura áll elötted. Gofy, Füles, Hamupipőke.")
             print("Válassz kivel fótózkodol.")
-            print("1 - Gofy")
+            print("1 - Goofy")
             print("2 - Füles")
             print("3 - Hamupipőke")
             valasz = input("Válasz: ")
