@@ -1,9 +1,0 @@
-print('Édesség bolt')
-print('1 cukor : 5 arany')
-mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
-    if arany >= mennyit_veszel*5:
-        arany -= mennyit_veszel*5
-        cukor += mennyit_veszel
-    else: 
-     print('Nincs elég aranyad')
-     print(f'Még {(mennyit_veszel*5) - arany }')

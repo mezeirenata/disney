@@ -12,7 +12,6 @@ def fomenu():
     valasztas = 7
     visszaugras = 1
     while visszaugras == 1:
-        statok()
         print('Opciók: ')
         print ('1 - Menj egyenesen')
         print ('2 - Menj balra')
@@ -24,11 +23,13 @@ def fomenu():
                 valasztas = int(input('Válassz! '))
         match valasztas:
                 case 1: 
-                    statok()
+                    print('--------------------------------------------')
+                    print('Megérkeztél a szökőkúthoz.')
+                    print('--------------------------------------------')
+                    
                     valasztas_case_1 = 7
                     eloszoregyenesen = 1
                     szokokut = 1
-                    print('Megérkeztél a szökőkúthoz.')
                     print('Opciók:')
                     print('1 - Balra mész')
                     print('2 - Jobbra mész')
@@ -39,27 +40,79 @@ def fomenu():
                         valasztas_case_1 = int(input('Válassz!'))
                     match valasztas_case_1:
                         case 1:
+                            visszaugras = -1
                             kedvesvagyelijeszt = random.randint(1,2)
                             if kedvesvagyelijeszt == 1:
                                 bohoc = 'kedves volt veled'
                             else:
                                 bohoc = 'gonosz volt veled'
-                                
-                            print(f'Találkozol egy kedves  bohóccal és {bohoc}.')
+                            print('--------------------------------------------')
+                            print(f'Találkozol egy bohóccal és {bohoc}.')
                             if bohoc == 'kedves volt veled':
                                 print('Kaptál 1 db cukrot.')
                                 cukor += 1
                             else:
                                 print('Vesztettél 1 életerőt .')
                                 eletero -= 1
+                            print('--------------------------------------------')
                         case 2:
-                            print('Balra haladtál tovább, és egy sarokba érsz, ahol találkozol Magdi jósnővel, aki behív a sátrába.')
-                            print('1 - Elfogadod a meghívást')
-                            print('2 - Elutasítod, és továbbmész')
-                            bemeszasatorba = 4
-                            while bemeszasatorba >3 or bemeszasatorba<1:
-                                bemeszasatorba = int(input('Válassz ! '))
-                            match bemeszasatorba:
+                            print('')
+                        case 3:
+                                print('--------------------------------------------')
+                                edessegeves = int(input('Mennyi édességet szeretnél enni, hogy növeld az energia szinted?'))
+                                if edessegeves >= cukor:
+                                    print('Nincs elég cukrod. Meglátogatod az édesség boltot?')
+                                    print('1 - igen')
+                                    print('2 - nem')
+                                    print('--------------------------------------------')
+                                    meglatogatod_e = int(input('Meglátogatod?'))
+                                    match meglatogatod_e:
+                                        case 1: 
+                                            print('--------------------------------------------')
+                                            print('Édesség bolt')
+                                            print('1 cukor : 5 arany')
+                                            print('--------------------------------------------')
+                                            mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
+                                            if arany >= mennyit_veszel*5:
+                                                arany -= mennyit_veszel*5
+                                                cukor += mennyit_veszel
+                                            else: 
+                                                print('--------------------------------------------')
+                                                print('Nincs elég aranyad')
+                                                print(f'Még {(mennyit_veszel*5) - arany } db aranyra van szükséged.')
+                                                print('--------------------------------------------')
+                                        case 2: 
+                                            visszaugras = 1 
+                                elif edessegeves <= 0 or edessegeves > 10-energia:
+                                    print('Adj meg egy normális mennyiséget!')
+                                elif edessegeves > 0 and edessegeves <= 10-energia:
+                                    energia += edessegeves
+                                    print('--------------------------------------------')
+                                    print(f'Az új energia szinted: {energia}')
+                                    print('--------------------------------------------')
+                        case 4:
+                            print('--------------------------------------------')
+                            print('Édesség bolt')
+                            print('1 cukor : 5 arany')
+                            print('--------------------------------------------')
+                            mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
+                            if arany >= mennyit_veszel*5:
+                                arany -= mennyit_veszel*5
+                                cukor += mennyit_veszel
+                            else: 
+                                print('Nincs elég aranyad')
+                                print(f'Még {(mennyit_veszel*5) - arany } db aranyra van szükséged.')
+                        case 5:
+                            print('Játék vége')
+
+                case 2:
+                    print('Balra haladtál tovább, és egy sarokba érsz, ahol találkozol Magdi jósnővel, aki behív a sátrába.')
+                    print('1 - Elfogadod a meghívást')
+                    print('2 - Elutasítod, és továbbmész')
+                    bemeszasatorba = 4
+                    while bemeszasatorba >3 or bemeszasatorba<1:
+                        bemeszasatorba = int(input('Válassz ! '))
+                    match bemeszasatorba:
                                 case 1:
                                     print('Elfogadtat a meghívást')
 ########artúr dolga 
@@ -78,81 +131,47 @@ def fomenu():
                                     elatkoz_vagy_elenged = random.randint(1,2)
                                     if elatkoz_vagy_elenged == 1:
                                         print(f'Magdi jósnéni ezt zokon vette, és elátkozott. (-5hp)')
-
-
+                                    else:
+                                        print('Szerencséd volt. Magdi jósnéni ezúttal elnézte neked, hogy elutasítottad meghívását.')
 #####Artúr dolga vége
-                        case 3:
-                                edessegeves = int(input('Mennyi édességet szeretnél enni, hogy növeld az energia szinted?'))
-                                if edessegeves >= cukor:
-                                    print('Nincs elég cukrod. Meglátogatod az édesség boltot?')
-                                    print('1 - igen')
-                                    print('2 - nem')
-                                    meglatogatod_e = int(input('Meglátogatod?'))
-                                    match meglatogatod_e:
-                                        case 1: 
-                                            print('Édesség bolt')
-                                            print('1 cukor : 5 arany')
-                                            mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
-                                            if arany >= mennyit_veszel*5:
-                                                arany -= mennyit_veszel*5
-                                                cukor += mennyit_veszel
-                                            else: 
-                                                print('Nincs elég aranyad')
-                                                print(f'Még {(mennyit_veszel*5) - arany }')
-                                        case 2: 
-                                            visszaugras = 1 
-                                elif edessegeves <= 0 or edessegeves >=11:
-                                    print('Adj meg egy normális mennyiséget!')
-                                elif edessegeves > 0 and edessegeves <11:
-                                    energia += edessegeves
-                                    print(f'Az új energia szinted: {energia}')
-                        case 4:
-                            print('Édesség bolt')
-                            print('1 cukor : 5 arany')
-                            mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
-                            if arany >= mennyit_veszel*5:
-                                arany -= mennyit_veszel*5
-                                cukor += mennyit_veszel
-                            else: 
-                                print('Nincs elég aranyad')
-                                print(f'Még {(mennyit_veszel*5) - arany }')
-                        case 5:
-                            print('Játék vége')
-
-                case 2:
-                    eloszorbalra = 1
-                        # 3 esemény történhet
-                    # z kategóriából 3 féle esemény közül generálódjon 1
+                    
                 case 3:
-                    pass
+                    stat(eletero,energia,cukor,arany,player_ATK,player_DEF)
                     visszaugras = -1
                 case 4:
                         edessegeves = int(input('Mennyi édességet szeretnél enni, hogy növeld az energia szinted?'))
                         if edessegeves >= cukor:
+                            print('--------------------------------------------')
                             print('Nincs elég cukrod. Meglátogatod az édesség boltot?')
                             print('1 - igen')
                             print('2 - nem')
+                            print('--------------------------------------------')
                             meglatogatod_e = int(input('Meglátogatod?'))
                             match meglatogatod_e:
                                 case 1: 
+                                    print('--------------------------------------------')
                                     print('Édesség bolt')
                                     print('1 cukor : 5 arany')
+                                    print('--------------------------------------------')
                                     mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
                                     if arany >= mennyit_veszel*5:
                                         arany -= mennyit_veszel*5
                                         cukor += mennyit_veszel
                                     else: 
+                                        print('--------------------------------------------')
                                         print('Nincs elég aranyad')
-                                        print(f'Még {(mennyit_veszel*5) - arany }')
+                                        print(f'Még {(mennyit_veszel*5) - arany } db aranyra van szükséged.')
+                                        print('--------------------------------------------')
                                 case 2: 
                                     visszaugras = 1 
-                        elif edessegeves <= 0 or edessegeves >=11:
+                        elif edessegeves <= 0 or edessegeves > 10-energia:
                             print('Adj meg egy normális mennyiséget!')
-                        elif edessegeves > 0 and edessegeves <11:
+                        elif edessegeves > 0 and edessegeves <= 10-energia:
                             energia += edessegeves
                             print(f'Az új energia szinted: {energia}')
                             
                 case 5:
+                    
                     print('Édesség bolt')
                     print('1 cukor : 5 arany')
                     mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
@@ -161,7 +180,7 @@ def fomenu():
                         cukor += mennyit_veszel
                     else: 
                         print('Nincs elég aranyad')
-                        print(f'Még {(mennyit_veszel*5) - arany }')
+                        print(f'Még {(mennyit_veszel*5) - arany } db aranyra van szükséged')
 
                 case 6:
                     print('Játék vége')

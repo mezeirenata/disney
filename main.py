@@ -1,11 +1,8 @@
 from menu import fomenu
-from statok import stat
+from statok import stat, eletero,energia,arany,cukor,player_ATK,player_DEF
 def main():
-    eletero = 10
-    energia = 10
-    arany = 50
-    cukor = 0
-    player_ATK = 2
-    player_DEF = 2
+    
     fomenu() 
 main()
+
+stat(eletero,energia,arany,cukor,player_ATK,player_DEF)
