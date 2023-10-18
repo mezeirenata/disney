@@ -24,66 +24,56 @@ def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk), end = '')
  
 def prBlack(skk): print("\033[98m {}\033[00m" .format(skk), end = '')
 
-hp = 100
-energia = randint(50, 100)
-penz = randint(1, 10)
-cukorka = randint(1, 10)
+eletero = 10
+energia = 10
+arany = 50
+cukor = 0
 player_ATK = 2
 player_DEF = 2
 szabad = True
 
-def stat(energia, hp, penz, cukorka, player_ATK, player_DEF):
+def stat(energia, eletero, arany, cukor, player_ATK, player_DEF):
 
-    while szabad == True:
+    #while szabad == True:
         
-        os.system('cls')
+        #os.system('cls')
         print('---------------------------------------------------------------------------------------')
         #HP
-        print(f'HP: {hp} %', end = ' ')
-        for i in range(1, hp + 1):
-            if i % 10 == 0 and hp > 70:
+        print(f'HP: {eletero} ', end = ' ')
+        for i in range(1, eletero + 1):
+            if i % 1 == 0 and eletero > 7:
                 prGreen("-")
-            elif i % 10 == 0 and hp <= 70 and hp > 40:
+            elif i % 1 == 0 and eletero <= 7 and eletero > 4:
                 prYellow("-")
-            elif i % 10 == 0 and hp <= 40:
+            elif i % 1 == 0 and eletero <= 4:
                 prRed("-")
-        if hp <= 30:
+        if eletero <= 3:
             prRed(" !!! ")
         print()
         #HP
         print(f'\tSebzés: {player_ATK}')
         print(f'\tVédekezés: {player_DEF}')
         #energia
-        print(f'Energia: {energia} %', end = ' ')
+        print(f'Energia: {energia} ', end = ' ')
         for i in range(1, energia + 1):
-            if i % 10 == 0 and energia > 70:
+            if i % 1 == 0 and energia > 7:
                 prGreen("-")
-            elif i % 10 == 0 and energia <= 70 and energia > 40:
+            elif i % 1 == 0 and energia <= 7 and energia > 4:
                 prYellow("-")
-            elif i % 10 == 0 and energia <= 40:
+            elif i % 1 == 0 and energia <= 4:
                 prRed("-")
-        if energia <= 30:
+        if energia <= 3:
             prRed(" !!! ")
         print()
         #energia
         #tárgyak
-        print(f'Pénz: {penz}')
-        print(f'Cukorka: {cukorka}')
+        print(f'Pénz: {arany}')
+        print(f'Cukorka: {cukor}')
 
 
         #tárgyak
 
         print('---------------------------------------------------------------------------------------')
 
-stat(energia, hp, penz, cukorka, player_ATK, player_DEF)
-
-
-for i in range(1, hp + 1):
-    if i % 10 == 0:
-        print('-', end = '')
-
-
-
- 
- 
+stat(energia, eletero, arany, cukor, player_ATK, player_DEF)
 

@@ -80,7 +80,7 @@ def event_eldont(player_x, player_y):
                     #gyerek
                 case 4:
                     event = 12
-                    # buff bolt
+                    # JÉGKÁSA AUTOMATA
                 case 5:
                     event = 14
                     #varázs póni
