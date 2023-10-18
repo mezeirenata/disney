@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-18T07:49:27.381Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="B3Poht5ICifBuIsmPSsM" version="22.0.4" type="device">
+<mxfile host="app.diagrams.net" modified="2023-10-18T08:31:23.632Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="lbJwbaKHz0qhLaAZzcRq" version="22.0.4" type="device">
   <diagram name="1 oldal" id="nGCqteqD-nDwgnXsAt1D">
-    <mxGraphModel dx="474" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -31,20 +31,8 @@
         <mxCell id="mSly-e9Xf92uoEyUnU41-9" value="MICKEY EGÉR" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mSly-e9Xf92uoEyUnU41-10" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mSly-e9Xf92uoEyUnU41-9" target="mSly-e9Xf92uoEyUnU41-8" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="210" y="550" as="sourcePoint" />
-            <mxPoint x="260" y="500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-11" value="GYEREK &lt;br&gt;FELLÖKÉS" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="970" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mSly-e9Xf92uoEyUnU41-12" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="mSly-e9Xf92uoEyUnU41-8" target="mSly-e9Xf92uoEyUnU41-55" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="210" y="520" as="sourcePoint" />
-            <mxPoint x="540" y="150" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-13" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="mSly-e9Xf92uoEyUnU41-9" target="mSly-e9Xf92uoEyUnU41-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -68,6 +56,9 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="JkZd_nxtKPJV1xH5oy3V-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mSly-e9Xf92uoEyUnU41-16" target="mSly-e9Xf92uoEyUnU41-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-16" value="SZÖKŐKÚT" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="260" width="120" height="60" as="geometry" />
         </mxCell>
@@ -83,23 +74,11 @@
         <mxCell id="mSly-e9Xf92uoEyUnU41-19" value="JÉGKÁSA&amp;nbsp;&lt;br&gt;AUTOMATA" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="260" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mSly-e9Xf92uoEyUnU41-20" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mSly-e9Xf92uoEyUnU41-16" target="mSly-e9Xf92uoEyUnU41-19" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="210" y="640" as="sourcePoint" />
-            <mxPoint x="260" y="590" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-21" value="PLÜSS BOLT" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="380" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-22" value="DONALD KACSA" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="380" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mSly-e9Xf92uoEyUnU41-23" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mSly-e9Xf92uoEyUnU41-22" target="mSly-e9Xf92uoEyUnU41-21" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="210" y="790" as="sourcePoint" />
-            <mxPoint x="260" y="740" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-24" value="VARÁZS PÓNI" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="380" width="120" height="60" as="geometry" />
@@ -137,12 +116,6 @@
         </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-31" value="KALÓZ HAJÓ" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="495" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mSly-e9Xf92uoEyUnU41-32" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mSly-e9Xf92uoEyUnU41-28" target="mSly-e9Xf92uoEyUnU41-31" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="210" y="875" as="sourcePoint" />
-            <mxPoint x="260" y="825" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-33" value="RUDOLF" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="615" width="120" height="60" as="geometry" />
@@ -184,20 +157,8 @@
         <mxCell id="mSly-e9Xf92uoEyUnU41-41" value="BARÁTNŐ" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="880" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mSly-e9Xf92uoEyUnU41-42" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mSly-e9Xf92uoEyUnU41-34" target="mSly-e9Xf92uoEyUnU41-40" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="260" y="790" as="sourcePoint" />
-            <mxPoint x="260" y="1120" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-43" value="ROSSZ CSONT&amp;nbsp;&lt;br&gt;JACK" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="760" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mSly-e9Xf92uoEyUnU41-44" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mSly-e9Xf92uoEyUnU41-40" target="mSly-e9Xf92uoEyUnU41-43" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="210" y="1140" as="sourcePoint" />
-            <mxPoint x="260" y="1090" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-45" value="BOBA &quot;FAT&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="880" width="120" height="60" as="geometry" />
@@ -213,12 +174,6 @@
         </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-48" value="MICI MACKÓ" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="880" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mSly-e9Xf92uoEyUnU41-49" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mSly-e9Xf92uoEyUnU41-45" target="mSly-e9Xf92uoEyUnU41-48" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="210" y="1260" as="sourcePoint" />
-            <mxPoint x="260" y="1210" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-50" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="mSly-e9Xf92uoEyUnU41-41" target="mSly-e9Xf92uoEyUnU41-34" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -238,12 +193,6 @@
         </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-53" value="ERŐS SZÉL FÚJÁS" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="615" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mSly-e9Xf92uoEyUnU41-54" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mSly-e9Xf92uoEyUnU41-46" target="mSly-e9Xf92uoEyUnU41-52" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="260" y="990" as="sourcePoint" />
-            <mxPoint x="260" y="1330" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="mSly-e9Xf92uoEyUnU41-55" value="ISMERŐSBE BOTLASSZ" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="140" width="120" height="60" as="geometry" />
