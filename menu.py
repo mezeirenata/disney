@@ -1,7 +1,7 @@
 # importolni - > statok
 import random
 from statok import stat
-from dialog import dialog_print
+
 
 def fomenu():
     eletero = 10
@@ -32,8 +32,8 @@ def fomenu():
                     eloszoregyenesen = 1
                     szokokut = 1
                     print('Opciók:')
-                    print('1 - Balra mész')
-                    print('2 - Jobbra mész')
+                    print('1 - Balra mész, a szökőkút körül')
+                    print('2 - Jobbra mész, a szökőkút körül')
                     print('3 - Egyél édességet (növeld meg az energiaszinted)')
                     print ('4 - Édesség bolt meglátogatása')
                     print ('5 - Kilépés')
@@ -75,6 +75,8 @@ def fomenu():
                                             print('--------------------------------------------')
                                             mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
                                             if arany >= mennyit_veszel*5:
+                                                print(f'Vettél {mennyit_veszel} db cukrot. ')
+                                                print(f'Összes cukrod száma: {cukor}')
                                                 arany -= mennyit_veszel*5
                                                 cukor += mennyit_veszel
                                             else: 
@@ -98,6 +100,8 @@ def fomenu():
                             print('--------------------------------------------')
                             mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
                             if arany >= mennyit_veszel*5:
+                                print(f'Vettél {mennyit_veszel} db cukrot. ')
+                                print(f'Összes cukrod száma: {cukor}')
                                 arany -= mennyit_veszel*5
                                 cukor += mennyit_veszel
                             else: 
@@ -156,6 +160,8 @@ def fomenu():
                                     print('--------------------------------------------')
                                     mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
                                     if arany >= mennyit_veszel*5:
+                                        print(f'Vettél {mennyit_veszel} db cukrot. ')
+                                        print(f'Összes cukrod száma: {cukor}')
                                         arany -= mennyit_veszel*5
                                         cukor += mennyit_veszel
                                     else: 
@@ -172,11 +178,14 @@ def fomenu():
                             print(f'Az új energia szinted: {energia}')
                             
                 case 5:
-                    
+                    print('--------------------------------------------')
                     print('Édesség bolt')
                     print('1 cukor : 5 arany')
+                    print('--------------------------------------------')
                     mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
                     if arany >= mennyit_veszel*5:
+                        print(f'Vettél {mennyit_veszel} db cukrot. ')
+                        print(f'Összes cukrod száma: {cukor}')
                         arany -= mennyit_veszel*5
                         cukor += mennyit_veszel
                     else: 
@@ -185,16 +194,17 @@ def fomenu():
 
                 case 6:
                     print('Játék vége')
+                    visszaugras = 0
 
 
-    x= dialog_print()
-    if "p" in x:
-        string = x.removeprefix("p")
-        print(f"Pénz: {string}")
-    elif "h" in x:
-        string = x.removeprefix("h")
-        print(f"Életerő: {string}")
-    elif "e" in x:
-        string = x.removeprefix("e")
-        print(f"Energia: {string}")
+    # x= dialog_print()
+    # if "p" in x:
+    #     string = x.removeprefix("p")
+    #     print(f"Pénz: {string}")
+    # elif "h" in x:
+    #     string = x.removeprefix("h")
+    #     print(f"Életerő: {string}")
+    # elif "e" in x:
+    #     string = x.removeprefix("e")
+    #     print(f"Energia: {string}")
 
