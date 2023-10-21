@@ -24,21 +24,22 @@ def fomenu():
                 valasztas = int(input('Válassz! '))
         match valasztas:
                 case 1: 
-                    print('--------------------------------------------')
-                    print('Megérkeztél a szökőkúthoz.')
-                    print('--------------------------------------------')
-                    
                     valasztas_case_1 = 7
                     eloszoregyenesen = 1
                     szokokut = 1
+                    print('\n')
                     print('Opciók:')
                     print('1 - Balra mész, a szökőkút körül')
                     print('2 - Jobbra mész, a szökőkút körül')
                     print('3 - Egyél édességet (növeld meg az energiaszinted)')
                     print ('4 - Édesség bolt meglátogatása')
                     print ('5 - Kilépés')
+                    print('--------------------------------------------')
+                    print('Megérkeztél a szökőkúthoz.')
+                    print('--------------------------------------------')
+                    
                     while valasztas_case_1 >6 or valasztas <1:
-                        valasztas_case_1 = int(input('Válassz!'))
+                        valasztas_case_1 = int(input('Mit szeretnél csinálni?'))
                     match valasztas_case_1:
                         case 1:
                             visszaugras = -1
@@ -60,7 +61,8 @@ def fomenu():
                             print('')
                         case 3:
                                 print('--------------------------------------------')
-                                edessegeves = int(input('Mennyi édességet szeretnél enni, hogy növeld az energia szinted?'))
+                                print(f'Energia szinted:{energia}')
+                                edessegeves = int(input('Mennyi édességet szeretnél enni, hogy növeld az energia szinted? (1 cukor -> +1 energia)'))
                                 if edessegeves >= cukor:
                                     print('Nincs elég cukrod. Meglátogatod az édesség boltot?')
                                     print('1 - igen')
@@ -75,17 +77,17 @@ def fomenu():
                                             print('--------------------------------------------')
                                             mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
                                             if arany >= mennyit_veszel*5:
-                                                print(f'Vettél {mennyit_veszel} db cukrot. ')
-                                                print(f'Összes cukrod száma: {cukor}')
                                                 arany -= mennyit_veszel*5
                                                 cukor += mennyit_veszel
+                                                print(f'Vettél {mennyit_veszel} db cukrot. ')
+                                                print(f'Összes cukrod száma: {cukor}')
                                             else: 
                                                 print('--------------------------------------------')
                                                 print('Nincs elég aranyad')
                                                 print(f'Még {(mennyit_veszel*5) - arany } db aranyra van szükséged.')
                                                 print('--------------------------------------------')
                                         case 2: 
-                                            visszaugras = 1 
+                                             pass
                                 elif edessegeves <= 0 or edessegeves > 10-energia:
                                     print('Adj meg egy normális mennyiséget!')
                                 elif edessegeves > 0 and edessegeves <= 10-energia:
@@ -100,10 +102,10 @@ def fomenu():
                             print('--------------------------------------------')
                             mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
                             if arany >= mennyit_veszel*5:
-                                print(f'Vettél {mennyit_veszel} db cukrot. ')
-                                print(f'Összes cukrod száma: {cukor}')
                                 arany -= mennyit_veszel*5
                                 cukor += mennyit_veszel
+                                print(f'Vettél {mennyit_veszel} db cukrot. ')
+                                print(f'Összes cukrod száma: {cukor}')
                             else: 
                                 print('Nincs elég aranyad')
                                 print(f'Még {(mennyit_veszel*5) - arany } db aranyra van szükséged.')
@@ -111,9 +113,13 @@ def fomenu():
                             print('Játék vége')
 
                 case 2:
-                    print('Balra haladtál tovább, és egy sarokba érsz, ahol találkozol Magdi jósnővel, aki behív a sátrába.')
+                    print('\n')
+                    print('--------------------------------------------')
+                    print('Balra haladtál tovább, és egy sarokba értél.Itt találkozol Magdi jósnővel, aki behív a sátrába.')
+                    print('\n')
                     print('1 - Elfogadod a meghívást')
                     print('2 - Elutasítod, és továbbmész')
+                    print('--------------------------------------------')
                     bemeszasatorba = 4
                     while bemeszasatorba >3 or bemeszasatorba<1:
                         bemeszasatorba = int(input('Válassz ! '))
@@ -144,9 +150,10 @@ def fomenu():
                     stat(eletero,energia,cukor,arany,player_ATK,player_DEF)
                     visszaugras = -1
                 case 4:
-                        edessegeves = int(input('Mennyi édességet szeretnél enni, hogy növeld az energia szinted?'))
+                        print('--------------------------------------------')
+                        print(f'Energia szinted:{energia}')
+                        edessegeves = int(input('Mennyi édességet szeretnél enni, hogy növeld az energia szinted? (1 cukor -> +1 energia)'))
                         if edessegeves >= cukor:
-                            print('--------------------------------------------')
                             print('Nincs elég cukrod. Meglátogatod az édesség boltot?')
                             print('1 - igen')
                             print('2 - nem')
@@ -160,22 +167,24 @@ def fomenu():
                                     print('--------------------------------------------')
                                     mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
                                     if arany >= mennyit_veszel*5:
-                                        print(f'Vettél {mennyit_veszel} db cukrot. ')
-                                        print(f'Összes cukrod száma: {cukor}')
                                         arany -= mennyit_veszel*5
                                         cukor += mennyit_veszel
+                                        print(f'Vettél {mennyit_veszel} db cukrot. ')
+                                        print(f'Összes cukrod száma: {cukor}')
                                     else: 
                                         print('--------------------------------------------')
                                         print('Nincs elég aranyad')
                                         print(f'Még {(mennyit_veszel*5) - arany } db aranyra van szükséged.')
                                         print('--------------------------------------------')
                                 case 2: 
-                                    visszaugras = 1 
+                                        pass
                         elif edessegeves <= 0 or edessegeves > 10-energia:
                             print('Adj meg egy normális mennyiséget!')
                         elif edessegeves > 0 and edessegeves <= 10-energia:
                             energia += edessegeves
+                            print('--------------------------------------------')
                             print(f'Az új energia szinted: {energia}')
+                            print('--------------------------------------------')
                             
                 case 5:
                     print('--------------------------------------------')
@@ -184,10 +193,10 @@ def fomenu():
                     print('--------------------------------------------')
                     mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
                     if arany >= mennyit_veszel*5:
-                        print(f'Vettél {mennyit_veszel} db cukrot. ')
-                        print(f'Összes cukrod száma: {cukor}')
                         arany -= mennyit_veszel*5
                         cukor += mennyit_veszel
+                        print(f'Vettél {mennyit_veszel} db cukrot. ')
+                        print(f'Összes cukrod száma: {cukor}')
                     else: 
                         print('Nincs elég aranyad')
                         print(f'Még {(mennyit_veszel*5) - arany } db aranyra van szükséged')
