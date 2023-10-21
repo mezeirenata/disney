@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-20T18:32:28.556Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="sJLu0tSIHgQZBXNuX43Z" version="22.0.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-20T19:16:24.449Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="J9Vdwxo4hXWu_RE5w8Nb" version="22.0.5" type="github">
   <diagram name="1 oldal" id="SZkVGr4VHI8cuYks12D8">
-    <mxGraphModel dx="989" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2049" dy="1114" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -175,14 +175,14 @@
             <mxPoint x="1060" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RfejrbbT5hm9Z-tXLrb4-12" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;felsegíted:&lt;br style=&quot;font-size: 10px;&quot;&gt;cukorkát kért tőled,&lt;br style=&quot;font-size: 10px;&quot;&gt;cserébe nem árult el&lt;br style=&quot;font-size: 10px;&quot;&gt;az anyjának&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#d5e8d4;rounded=1;fontSize=10;" parent="1" vertex="1">
+        <mxCell id="RfejrbbT5hm9Z-tXLrb4-12" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;(elesik) felsegíted:&lt;br style=&quot;font-size: 10px;&quot;&gt;cukorkát kért tőled,&lt;br style=&quot;font-size: 10px;&quot;&gt;cserébe nem árult el&lt;br style=&quot;font-size: 10px;&quot;&gt;az anyjának&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#d5e8d4;rounded=1;fontSize=10;" parent="1" vertex="1">
           <mxGeometry x="960" y="585" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZeIe9nPfyKFeGoANkGUT-1" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;felsegíted:&lt;br style=&quot;font-size: 10px;&quot;&gt;anyja attól még megver&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#f8cecc;rounded=1;fontSize=10;" parent="1" vertex="1">
+        <mxCell id="ZeIe9nPfyKFeGoANkGUT-1" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;(elesik)felsegíted:&lt;br style=&quot;font-size: 10px;&quot;&gt;anyja attól még megver&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#f8cecc;rounded=1;fontSize=10;" parent="1" vertex="1">
           <mxGeometry x="873.5" y="545" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZeIe9nPfyKFeGoANkGUT-3" value="nem lökted fel" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#d5e8d4;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1110" y="570" width="100" height="30" as="geometry" />
+        <mxCell id="ZeIe9nPfyKFeGoANkGUT-3" value="nem lökted fel&lt;br&gt;(attól még megbotlottál benne)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#d5e8d4;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1081" y="570" width="190" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ZeIe9nPfyKFeGoANkGUT-4" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.37;exitY=-0.033;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="ZeIe9nPfyKFeGoANkGUT-3" target="VQEg4Eyufkacg4ii3oWg-32" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -214,8 +214,8 @@
             <mxPoint x="1198" y="611" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mEzDhjuTcP2UeNapwm7h-1" value="beállsz játszani:&lt;br style=&quot;font-size: 10px;&quot;&gt;veszítesz" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#f8cecc;fontSize=10;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="580" y="735" width="90" height="40" as="geometry" />
+        <mxCell id="mEzDhjuTcP2UeNapwm7h-1" value="beállsz játszani:&lt;br style=&quot;font-size: 10px;&quot;&gt;veszítesz (kevés pénz)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#f8cecc;fontSize=10;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="735" width="130" height="40" as="geometry" />
         </mxCell>
         <mxCell id="mEzDhjuTcP2UeNapwm7h-2" value="beállsz játszani:&lt;br style=&quot;font-size: 10px;&quot;&gt;elveszíted az összes&lt;br style=&quot;font-size: 10px;&quot;&gt;pénzed" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#f8cecc;fontSize=10;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="625" y="785" width="120" height="50" as="geometry" />
@@ -409,7 +409,7 @@
             <mxPoint x="850" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tyvOHzYTXg94P7KKSL1S-2" value="jobbra mész, vagy balra (opcionális" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="tyvOHzYTXg94P7KKSL1S-2" value="jobbra mész, vagy balra (opcionális)" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="845" y="360" width="70" height="40" as="geometry" />
         </mxCell>
       </root>
