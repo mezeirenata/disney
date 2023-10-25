@@ -1,7 +1,6 @@
 # importolni - > statok
 import random
-from statok import stat
-
+# from statok import stat
 
 def fomenu():
     eletero = 10
@@ -12,7 +11,7 @@ def fomenu():
     player_DEF = 2
     valasztas = 7
     visszaugras = 1
-    while visszaugras == 1:
+    while visszaugras == 1 and eletero > 0: 
         print('Opciók: ')
         print ('1 - Menj egyenesen')
         print ('2 - Menj balra')
@@ -25,8 +24,6 @@ def fomenu():
         match valasztas:
                 case 1: 
                     valasztas_case_1 = 7
-                    eloszoregyenesen = 1
-                    szokokut = 1
                     print('\n')
                     print('Opciók:')
                     print('1 - Balra mész, a szökőkút körül')
@@ -147,8 +144,8 @@ def fomenu():
 #####Artúr dolga vége
                     
                 case 3:
-                    stat(eletero,energia,cukor,arany,player_ATK,player_DEF)
-                    visszaugras = -1
+                    print('Jobbra haladtál és a virágokhoz értél, ezután elfordultál balra és felvetted az irányt a szökőkút felé')
+                    eventcsoport1 = eventek(eventcsoport1)
                 case 4:
                         print('--------------------------------------------')
                         print(f'Energia szinted:{energia}')
@@ -205,15 +202,14 @@ def fomenu():
                     print('Játék vége')
                     visszaugras = 0
 
-
-    # x= dialog_print()
-    # if "p" in x:
-    #     string = x.removeprefix("p")
-    #     print(f"Pénz: {string}")
-    # elif "h" in x:
-    #     string = x.removeprefix("h")
-    #     print(f"Életerő: {string}")
-    # elif "e" in x:
-    #     string = x.removeprefix("e")
-    #     print(f"Energia: {string}")
+# x= dialog_print()
+# if "p" in x:
+#     string = x.removeprefix("p")
+#     print(f"Pénz: {string}")
+# elif "h" in x:
+#     string = x.removeprefix("h")
+#     print(f"Életerő: {string}")
+# elif "e" in x:
+#     string = x.removeprefix("e")
+#     print(f"Energia: {string}")
 

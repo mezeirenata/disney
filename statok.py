@@ -75,5 +75,5 @@ def stat(energia, eletero, arany, cukor, player_ATK, player_DEF):
 
         print('---------------------------------------------------------------------------------------')
 
-stat(energia, eletero, arany, cukor, player_ATK, player_DEF)
+
 
