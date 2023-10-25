@@ -32,7 +32,7 @@ player_ATK = 2
 player_DEF = 2
 szabad = True
 
-def stat(energia, eletero, arany, cukor, player_ATK, player_DEF):
+def stat(eletero,player_ATK,player_DEF,energia,arany,cukor):
 
     #while szabad == True:
         
@@ -75,5 +75,5 @@ def stat(energia, eletero, arany, cukor, player_ATK, player_DEF):
 
         print('---------------------------------------------------------------------------------------')
 
-
+stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
 

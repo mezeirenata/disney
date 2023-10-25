@@ -1,4 +1,5 @@
-from valtozok import *
+from map import player_y
+from map import player_x
 
 def event_eldont(player_x, player_y):
     match player_x:
@@ -14,11 +15,11 @@ def event_eldont(player_x, player_y):
                     return event
                 case 3:
                     event = 3
-                    #virágok
+                    #fotozas
                     return event
                 case 4:
-                    event = 14
-                    #varázs póni
+                    event = 11
+                    #donald kacsa
                     return event
                 case 5:
                     event = 13
@@ -52,11 +53,11 @@ def event_eldont(player_x, player_y):
                     return event
                 case 2:
                     event = 2
-                    #szökőkút
+                    #bohoc
                     return event
                 case 3:
                     event = 4
-                    #szobor
+                    #szökőkút
                     return event
                 case 4:
                     event = 7
@@ -105,7 +106,9 @@ def event_eldont(player_x, player_y):
                     # JÉGKÁSA AUTOMATA
                     return event
                 case 5:
-                   pass
+                    event = 14
+                    #varázs póni
+                    return event
                 case 6:
                     event = 15
                     #kalóz hajo
