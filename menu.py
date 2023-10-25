@@ -1,7 +1,7 @@
 # importolni - > statok
 import random
 from statok import stat
-
+from dialog import dialog_print
 
 def fomenu():
     eletero = 10
@@ -25,8 +25,6 @@ def fomenu():
         match valasztas:
                 case 1: 
                     valasztas_case_1 = 7
-                    eloszoregyenesen = 1
-                    szokokut = 1
                     print('\n')
                     print('Opciók:')
                     print('1 - Balra mész, a szökőkút körül')
@@ -204,16 +202,17 @@ def fomenu():
                 case 6:
                     print('Játék vége')
                     visszaugras = 0
+dialog_print()
 
 
-    # x= dialog_print()
-    # if "p" in x:
-    #     string = x.removeprefix("p")
-    #     print(f"Pénz: {string}")
-    # elif "h" in x:
-    #     string = x.removeprefix("h")
-    #     print(f"Életerő: {string}")
-    # elif "e" in x:
-    #     string = x.removeprefix("e")
-    #     print(f"Energia: {string}")
+x= dialog_print()
+if "p" in x:
+    string = x.removeprefix("p")
+    print(f"Pénz: {string}")
+elif "h" in x:
+    string = x.removeprefix("h")
+    print(f"Életerő: {string}")
+elif "e" in x:
+    string = x.removeprefix("e")
+    print(f"Energia: {string}")
 
