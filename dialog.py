@@ -66,3 +66,48 @@ def dialog_print(arany, player_HP, player_x, player_y):
                     print("Fülessel jót beszélgetsz (+20 energia).")
                 case 3: 
                     print("Hamupipőke ad 1 cukorkát neked.")
+        case 14:
+            poni = random.randint(1, 10)
+            if viragsziv == True:
+                print("Találkozol egy varázsponival)")
+                match poni:
+                    case 1:
+                        print("Felülsz a póni hátára majd elrepít téged az otthonába és ott egy csodás életet élhetsz. Játék vége.")
+                        print("A program 10 másodpercen bellül megsemmisíti magát.")
+                        for i in range(10,0,-1):
+                            print(i)
+                            time.sleep(1)
+                        raise ZeroDivisionError
+                    case _:
+                        print("A poni szarva hirtelen elkezd világítani majd hatalmas fényességet látsz")
+                        print("Az póni elvarázsolt téged és rád ruházta ereje egy részét. Kaptál 10 energiát")
+            else:
+                pnvsz = random.randint(1, 2)
+                match pnvsz: 
+                    case 1:
+                        print("Találkozol egy varázsponival)")
+                        match poni:
+                            case 1:
+                                print("Felülsz a póni hátára majd elrepít téged az otthonába és ott egy csodás életet élhetsz. Játék vége.")
+                                print("A program 10 másodpercen bellül megsemmisíti magát.")
+                                for i in range(10,0,-1):
+                                    print(i)
+                                    time.sleep(1)
+                                raise ZeroDivisionError
+                            case _:
+                                print("A poni szarva hirtelen elkezd világítani majd hatalmas fényességet látsz")
+                                print("Az póni elvarázsolt téged és rád ruházta ereje egy részét. Kaptál 10 energiát")
+                    case 2:
+                        print("Hirtelen hatalmas szél támad")
+                        szel = random.randint(1, 2)
+                        match szel:
+                            case 1:
+                                print("Túl erős a szél és hátra esel. Vesztettél 5 életerőt")
+                            case 2: 
+                                print("A szél feléd fúj egy kastély jegyet")
+                                elk = random.randint(1,3)
+                                match elk:
+                                    case 1:
+                                        print("Sikeresen elkaptad a jegyet.")
+                                    case _:
+                                        print("Nem sikerült elkapnod és a jegy továbbszállt.")
