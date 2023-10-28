@@ -82,22 +82,45 @@ def menu2():
     while visszaugras == 1:
         visszaugras = 0
         print('\n')
-        print('-------------------------------------')
+        print('----------------------------------------------------------------------------------------')
         print('Opciók:')
-        print('\t 1 - Mész tovább')
+        print('\t 1 - Menj tovább')
         print('\t 2 - Egyél édességet (növeld meg az energiaszinted)')
         print ('\t3 - Édesség bolt meglátogatása')
         prRed('\t 4 - Kilépés')
-        print('-------------------------------------')
+        print('----------------------------------------------------------------------------------------')
         mitszeretnel = 5
         while mitszeretnel > 4 or mitszeretnel < 1:
             mitszeretnel = int(input('Mit szeretnél csinálni? '))
         match mitszeretnel:
             case 1:
                 energia -= 1
-                print('\n')
-                stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
-                
+                elesik_vagy_nem = random.randint(1,2)
+                match elesik_vagy_nem:
+                    case 1:
+                        #elesik
+                        print('\n')
+                        stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
+                        print('----------------------------------------------------------------------------------------')
+                        print('Opciók:')
+                        print('\t 1 - Felsegíted')
+                        print('\t 2 - Nem segíted fel')
+                        print('----------------------------------------------------------------------------------------')
+                        prPurple('Egyenesen mentél tovább Magdi néni sátrától, de mielőtt megközelíthetted volna a szökőkutat az útvégén, ')
+                        prPurple('megbotlottál egy kisgyerekben véletlenül, és elesett.')
+                        print('----------------------------------------------------------------------------------------')
+                        mitteszel = 3
+                        while mitteszel > 2 or mitteszel < 1:
+                            mitteszel = int(input('Mit teszel?'))
+                        match mitteszel:
+#TODO                            
+                            case 1:
+                                pass
+                            case 2:
+                                pass
+                    case 2:
+                        #nem esik el, de attól még megbotlottál benne
+                        pass
             case 2:
                 print('--------------------------------------------')
                 print(f'Energia szinted:{energia}')
