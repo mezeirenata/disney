@@ -1,8 +1,8 @@
 import os
-def prRed(skk): print("\033[91m {}\033[00m" .format(skk), end = '')
+def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
  
  
-def prGreen(skk): print("\033[92m {}\033[00m" .format(skk), end = '')
+def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
  
  
 def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
@@ -28,6 +28,7 @@ print('\t 5 - lila')
 print('\t 6 - cián')
 print('\t 7 - világosszürke')
 print('\t 8 - fekete')
+
 while valasztas > 8 or valasztas < 1:
     valasztas = int(input('Szín : '))
 match valasztas:
@@ -62,4 +63,16 @@ match valasztas:
     case 8:
         prBlack('A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,')
         prBlack('a , b , c , d , e , f , g , h , i , j , k , l , m , n , o , p , q , r , s , t , u , v , w , x , y , z')
+
+print('\n')
+print('\n')
+print('─────────────────────────────────────────────')
+print('\n')
+print('⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊⑊')
+print('\n')
+print('╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲')
+print('\n')
+print('╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱╲╱')
+print('\n')
+    
       
