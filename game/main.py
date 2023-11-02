@@ -16,7 +16,7 @@ def main():
     visszaugras = 1
     print('------------------------------------------------------------------')
     prPurple('A híres és varázslatos DisneyLand bejáratánál tartózkodsz.')
-    prPurple('Célod eljutni a kastélyban, anélkül hogy kirúgnának onnan.')
+    prPurple('Célod eljutni a kastélyba, anélkül hogy kirúgnának onnan.')
     print('------------------------------------------------------------------')
     print('Opciók: ')
     print ('\t1 - Menj egyenesen')
@@ -26,7 +26,7 @@ def main():
     prBlack('------------------------------------------------------------------')
     print('Mit szeretnél csinálni? ')
     prBlack('------------------------------------------------------------------')
-    while valasztas >6 or valasztas <1:
+    while valasztas >4 or valasztas <1:
             valasztas = int(input('Válassz! '))
     match valasztas:
             case 1: 
