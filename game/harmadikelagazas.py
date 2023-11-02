@@ -22,20 +22,20 @@ def menu3():
             print('\n')
             stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
             prPurple('A szökőkúttól az utad csak egyenesen visz tovább.')
-            print('---------------')
+            print('──────────────────────────────────────────────────────────────────────────────────────────')
             print('Opciók:')
             print('\t 1 - Igen')
             prRed('\t 2 - Nem (-> kilépés)')
-            print('---------------')
+            print('──────────────────────────────────────────────────────────────────────────────────────────')
             tovabbmesz = 3
             while tovabbmesz > 2 or tovabbmesz < 1:
                 tovabbmesz = int(input('\tTovább mész? ')) 
             match tovabbmesz:
                 case 1:
                     print('\n')
-                    print('─────────────────────────────────────────────')
+                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                     prPurple('Egyenesen mentél tovább')
-                    print('─────────────────────────────────────────────')
+                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                     energia -= 1
                     visszaugras3 = 1
                     while visszaugras3 != 0:
@@ -47,9 +47,9 @@ def menu3():
                         print('\t3 - Egyél édességet (növeld meg az energiaszinted)')
                         print ('\t4 - Édesség bolt meglátogatása')
                         prRed ('\t5 - Kilépés')
-                        print('--------------------------------------------')
+                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                         prPurple('Egy szerencsekerék van hozzád közel. ')
-                        print('--------------------------------------------')
+                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                         mitteszel = 0
                         while mitteszel >6 or mitteszel < 1:
                             mitteszel = int(input('Mit teszel? '))
@@ -63,52 +63,52 @@ def menu3():
                                             arany -= 15
                                         else:
                                             arany = 0
-                                        print('--------------------------------------------------------------------------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         eventek2.szk1()
-                                        print('--------------------------------------------------------------------------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                     case 2:
-                                        print('-----------------------------------------------------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         eventek2.szk2()
                                         prRed(f'-{arany} arany')
-                                        print('-----------------------------------------------------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                         arany = 0
                                     case 3:
                                         arany += 15
-                                        print('-----------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         eventek2.szk3()
-                                        print('-----------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                     case 4:
                                         arany += 50
-                                        print('-----------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         eventek2.szk4()
-                                        print('-----------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                     case 5:
                                         if arany >= 15:
                                             vesztesz = 15
                                         else:
                                             vesztesz = arany
-                                        print('--------------------------------------------------------------------------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         eventek2.szk5()
                                         print('\t-----------')
                                         prRed(f'\t -{vesztesz} arany ')
                                         print('\t-----------')
-                                        print('--------------------------------------------------------------------------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                     case 6:
-                                        print('-----------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         eventek2.szk6()
-                                        print('-----------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         kastelyjegy = 1
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                 print('\n')
-                                print('-------------------------------')
+                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 print('\t 1 - Igen')
                                 print('\t 2 - Nem')
-                                print('-------------------------------')
+                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 folytatas1 = 0
                                 while folytatas1 > 2 or folytatas1 < 1:
                                     folytatas1 = int(input('Folytatod a játékot? '))
@@ -119,10 +119,10 @@ def menu3():
                                         print('Opciók:')
                                         print('\t 1 - Belépsz a kastélyba ')
                                         prRed('\t 2 - Nem lépsz be a kastélyba')
-                                        print('-------------------------------------------------------------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         prPurple('Miután részt vettél a szerencsekerekezésben, megláttad a kastélyt és elindultál felé.')
                                         prPurple('Egy kisebb séta után elérkeztél a kastély bejáratához. ')
-                                        print('-------------------------------------------------------------------------------------')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         belepsz_vagy_nem = 5
                                         while belepsz_vagy_nem > 2 or belepsz_vagy_nem < 1:
                                             belepsz_vagy_nem = int(input('Hogyan döntesz? '))
@@ -131,26 +131,26 @@ def menu3():
                                             case 1:
                                                 stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                                 if kastelyjegy == 1:
-                                                    print('-------------------------------------------------------------------------------------')
+                                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                     prPurple('Beléptél a kastélyba.')
                                                     prPurple('Mivel volt egy korábbról szerzett jegyed, ezért a kastélyban jegyváráslás nélkül továbbmehetsz.')
-                                                    print('-------------------------------------------------------------------------------------')
+                                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                     print('\n')
                                                     prGreen('Sikeresen kijátszottad a játékot, az utadat szabadon folytathatod a kastélyban!') 
                                                 else:
                                                     print('\n')
-                                                    print('-------------------------------------------------------------------------------------')
+                                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                     prPurple('Beléptél a kastélyba, viszont ahhoz hogy beljebb mehess venned kell egy jegyet!')
                                                     print('')
                                                     prPurple('\t1 jegy - 60 arany')
-                                                    print('-------------------------------------------------------------------------------------')
+                                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                     print(f'Az aranyaid száma:{arany}')
                                                     if arany >= 60:
-                                                        print('------------------------')
+                                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                         print('Opciók')
                                                         print('\t 1 - Veszel jegyet')
                                                         print('\t 2 - Nem veszel jegyet')
-                                                        print('------------------------')
+                                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                         veszeljegy = 3
                                                         while veszeljegy > 2 or veszeljegy < 1:
                                                             veszeljegy = int(input('Veszel jegyet? '))
@@ -160,17 +160,17 @@ def menu3():
                                                                     elszakad_vagy_nem = random.randint(1,2)
                                                                     match elszakad_vagy_nem:
                                                                         case 1:
-                                                                            print('-------------------------------------')
+                                                                            print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                                             prPurple('Vettél sikeresen egy kastély belépőt.')
-                                                                            print('-------------------------------------')
+                                                                            print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                                             print('\n')
                                                                             prGreen('Kijátszottad a játékot, az utadat szabadon folytathatod a kastélyban!') 
                                                                             break
                                                                         case 2:
-                                                                            print('-----------------------------------------------------------------------')
+                                                                            print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                                             prPurple('Vettél sikeresen egy kastély belépőt, azonban kiejtetted a kezedből.')
                                                                             prPurple('A jegyet soha nem találtad meg ')
-                                                                            print('-----------------------------------------------------------------------')
+                                                                            print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                                             print('\n')
                                                                             prRed('Sajnos a játéknak vége!')
                                                                             break
@@ -178,21 +178,21 @@ def menu3():
                                                                     prRed('Az őrök eltávolítottak a kastélyból, a játéknak vége.')
                                                                     break
                                                     else:
-                                                        print('----------------------------------------------------------------------------')
+                                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                         print('Opciók')
                                                         prRed('\t 1 - Mivel nincs pénzed a jegyre, kilépsz a kastélyból, és vége a játéknak')
                                                         print('\t 2 - Maradsz a kastélyban és beljebb mész')
-                                                        print('----------------------------------------------------------------------------')
+                                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                         maradsz_e = 3
                                                         while maradsz_e > 2 or maradsz_e < 1:
                                                             maradsz_e = int(input('Választásod: '))
                                                         match maradsz_e:
                                                             case 1:
                                                                 print('\n')
-                                                                print('----------------------------------------------------------------------------')
+                                                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                                 prRed('\tKiléptél a kastélyból.')
                                                                 prRed('\tA játéknak vége.')
-                                                                print('----------------------------------------------------------------------------')
+                                                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                                 break
                                                             case 2:
                                                                 orok_vagy_kedves_ember = random.randint(1,2)
@@ -200,19 +200,19 @@ def menu3():
                                                                     case 1:
                                                                         #őrök
                                                                         print('\n')
-                                                                        print('----------------------------------------------------------------------------')
+                                                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                                         prRed('Mivel úgy döntöttél, hogy maradsz a kastélyban és beljebb mész jegy nélkül, az őrök eltávolítottak a kastélyból')
                                                                         prRed('\t A játéknak vége.')
-                                                                        print('----------------------------------------------------------------------------')
+                                                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                                         break
                                                                     case 2:
                                                                         # kedves ember
                                                                         print('\n')
-                                                                        print('----------------------------------------------------------------------------')
+                                                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                                         prGreen('Úgy döntöttél, hogy beljebb mész a kastélyba jegy nélkül, azonban őrök kezdtek haladni feléd.')
                                                                         prGreen('Szerencsére egy másik ember észrevette az őröket, és kedvességből adott neked egy kastély jegyet. ')
                                                                         prGreen('\t Kijátszottad a játékot, az utadat szabadon folytathatod a kastélyban!')
-                                                                        print('----------------------------------------------------------------------------')
+                                                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                                         break
                                             case 2:
                                                 prRed('Nem sikerült eljutnod a kastélyba, a játéknak vége.')
@@ -223,9 +223,9 @@ def menu3():
                             case 2:
                                 stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                 energia -= 1
-                                print('--------------------------------------------------------------------------------------------------')
+                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 eventek2.szk0()
-                                print('--------------------------------------------------------------------------------------------------')
+                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 arany += 15
                                 stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                 print('\n')
@@ -237,14 +237,14 @@ def menu3():
                                 if folytatas1 == 1:
                                     print('\n')
                                     stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
-                                    print('-------------------------------------------------------------------------------------')
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                     print('Opciók:')
                                     print('\t 1 - Belépsz a kastélyba ')
                                     prRed('\t 2 - Nem lépsz be a kastélyba')
-                                    print('-------------------------------------------------------------------------------------')
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                     prPurple('Miután részt vettél a szerencsekerekezésben, megláttad a kastélyt és elindultál felé.')
                                     prPurple('Egy kisebb séta után elérkeztél a kastély bejáratához. ')
-                                    print('-------------------------------------------------------------------------------------')
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                     belepsz_vagy_nem = 3
                                     while belepsz_vagy_nem > 2 or belepsz_vagy_nem < 1:
                                         belepsz_vagy_nem = int(input('Hogyan döntesz? '))
@@ -253,26 +253,26 @@ def menu3():
                                         case 1:
                                             stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                             if kastelyjegy == 1:
-                                                print('-------------------------------------------------------------------------------------')
+                                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                 prPurple('Beléptél a kastélyba.')
                                                 prPurple('Mivel volt egy korábbról szerzett jegyed, ezért a kastélyban jegyváráslás nélkül továbbmehetsz.')
-                                                print('-------------------------------------------------------------------------------------')
+                                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                 print('\n')
                                                 prGreen('Sikeresen kijátszottad a játékot, az utadat szabadon folytathatod a kastélyban!') 
                                             else:
                                                 print('\n')
-                                                print('-------------------------------------------------------------------------------------')
+                                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                 prPurple('Beléptél a kastélyba, viszont ahhoz hogy beljebb mehess venned kell egy jegyet!')
                                                 print('')
                                                 prPurple('\t1 jegy - 60 arany')
-                                                print('-------------------------------------------------------------------------------------')
+                                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                 print(f'Az aranyaid száma:{arany}')
                                                 if arany >= 60:
-                                                    print('------------------------')
+                                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                     print('Opciók')
                                                     print('\t 1 - Veszel jegyet')
                                                     print('\t 2 - Nem veszel jegyet')
-                                                    print('------------------------')
+                                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                     veszeljegy = 3
                                                     while veszeljegy > 2 or veszeljegy < 1:
                                                         veszeljegy = int(input('Veszel jegyet? '))
@@ -291,11 +291,11 @@ def menu3():
                                                                 eventek2.nemvesz()
                                                                 break
                                                 else:
-                                                    print('----------------------------------------------------------------------------')
+                                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                     print('Opciók')
                                                     prRed('\t 1 - Mivel nincs pénzed a jegyre, kilépsz a kastélyból, és vége a játéknak')
                                                     print('\t 2 - Maradsz a kastélyban és beljebb mész')
-                                                    print('----------------------------------------------------------------------------')
+                                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                     maradsz_e = 3
                                                     while maradsz_e > 2 or maradsz_e < 1:
                                                         maradsz_e = int(input('Választásod: '))
@@ -321,44 +321,44 @@ def menu3():
                                     prRed('Játék vége')
                                     break
                             case 3:
-                                print('--------------------------------------------')
+                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 prLightPurple(f'Energia szinted:{energia}')
                                 edessegeves = int(input('Mennyi édességet szeretnél enni, hogy növeld az energia szinted? (1 cukor -> +1 energia) '))
-                                print('--------------------------------------------')
+                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 if edessegeves > cukor:
                                     print('\n')
                                     prLightPurple('Nincs elég cukrod. Meglátogatod az édesség boltot?')
-                                    print('--------------------------------------------')
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                     print('\t1 - Igen')
                                     print('\t2 - Nem')
-                                    print('--------------------------------------------')
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                     meglatogatod_e = 0
                                     while meglatogatod_e >2 or meglatogatod_e < 1:
                                         meglatogatod_e = int(input('Meglátogatod? '))
                                     match meglatogatod_e:
                                         case 1: 
                                             print('\n')
-                                            print('--------------------------------------------')
+                                            print('──────────────────────────────────────────────────────────────────────────────────────────')
                                             prLightPurple('Édesség bolt')
                                             print('')
                                             prLightPurple('1 cukor - 5 arany')
                                             print('\n')
-                                            print('--------------------------------------------')
+                                            print('──────────────────────────────────────────────────────────────────────────────────────────')
                                             prLightPurple(f'{arany} db aranyad van.')
                                             mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
                                             if arany >= mennyit_veszel*5:
                                                 arany -= mennyit_veszel*5
                                                 cukor += mennyit_veszel
-                                                print('--------------------------------------------')
+                                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                 prLightPurple(f'Vettél {mennyit_veszel} db cukrot. ')
                                                 prLightPurple(f'Összes cukrod száma: {cukor}')
-                                                print('--------------------------------------------')
+                                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                 visszaugras3 = 1
                                             else: 
-                                                print('--------------------------------------------')
+                                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                 prLightPurple('Nincs elég aranyad')
                                                 prLightPurple(f'Még {(mennyit_veszel*5) - arany } db aranyra van szükséged.')
-                                                print('--------------------------------------------')
+                                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                 visszaugras3 = 1
                                         case 2: 
                                             visszaugras3 = 1
@@ -367,27 +367,27 @@ def menu3():
                                     visszaugras3 = 1
                                 elif edessegeves > 0 and edessegeves <= 10-energia:
                                     energia += edessegeves
-                                    print('--------------------------------------------')
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                     prLightPurple(f'Az új energia szinted: {energia}')
-                                    print('--------------------------------------------')
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                     visszaugras3 = 1
                             case 4:
                                 print('\n')
-                                print('--------------------------------------------')
+                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 prLightPurple('Édesség bolt')
                                 print('')
                                 prLightPurple('1 cukor - 5 arany')
                                 print('\n')
-                                print('--------------------------------------------')
+                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 prLightPurple(f'{arany} db aranyad van.')
                                 mennyit_veszel = int(input('Mennyi cukrot szeretnél venni? '))
                                 if arany >= mennyit_veszel*5:
                                     arany -= mennyit_veszel*5
                                     cukor += mennyit_veszel
-                                    print('--------------------------------------------')
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                     prLightPurple(f'Vettél {mennyit_veszel} db cukrot. ')
                                     prLightPurple(f'Összes cukrod száma: {cukor}')
-                                    print('--------------------------------------------')
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
                                     visszaugras3 = 1
                                 else: 
                                     print('\n')
