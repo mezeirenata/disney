@@ -29,6 +29,7 @@ def main():
     print('──────────────────────────────────────────────────────────────────────────────────────────')
     while valasztas >4 or valasztas <1:
             valasztas = int(input('Válassz! '))
+    print('\n')
     match valasztas:
             case 1: 
                     menu1()
