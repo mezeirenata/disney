@@ -16,3 +16,11 @@
 .navbar{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.nav-item{
+    border-radius:5vh;
+    transition: 0.5s;
+}
+.nav-item:hover{
+    background-color:rgba(24, 17, 39, 0.424)!important;
+    transition: 0.5s;
+}
