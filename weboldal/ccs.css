@@ -24,3 +24,34 @@
     background-color:rgba(24, 17, 39, 0.424)!important;
     transition: 0.5s;
 }
+.fs-1,.fs-2,.fs-3,.fs-4,.fs-5:hover{
+    cursor:default
+}
+.bg-purple{
+    background-color:rgb(75, 66, 93)!important;
+    border-radius:3vh;
+}
+.elsosor .card img:hover {
+    transform: scale(1.15) rotate(-3deg);
+    transition: .5s;
+}
+
+.elsosor .card {
+    overflow: hidden;
+    cursor: default;
+}
+
+.elsosor .card-text {
+    position: relative;
+}
+
+.elsosor .card img {
+    transition: .5s;
+}
+
+.no-underline{
+    text-decoration: none;
+}
+.no-underline .card:hover{
+    cursor:pointer;
+}
