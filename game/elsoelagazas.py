@@ -199,7 +199,6 @@ def menu1():
                         print ('\t4 - Édesség bolt meglátogatása')
                         prRed ('\t5 - Kilépés')
                         if visszaugras3 == 1:
-                            print('\n')
                             print('──────────────────────────────────────────────────────────────────────────────────────────')
                             prPurple('Egyenesen mentél tovább, és egy szerencsekerékhez értél.')
                             print('──────────────────────────────────────────────────────────────────────────────────────────')
@@ -263,6 +262,7 @@ def menu1():
                                         kastelyjegy = 1
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                 print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                print('Opciók:')
                                 print('\t 1 - Igen')
                                 prRed('\t 2 - Nem')
                                 print('──────────────────────────────────────────────────────────────────────────────────────────')

@@ -64,6 +64,7 @@ def menu3():
                             case 1:
                                 eventek2.unikornis1()
                                 jatekvege =-1
+                                exit()
                             case 2:
                                 if energia > 5:
                                     mennyienergia = 10 - energia
@@ -78,7 +79,7 @@ def menu3():
                                 print('──────────────────────────────────────────────────────────────────────────────────────────')
                     case 2:
                         eventek2.szel()
-                        elesel_vagy_kastelyjegy= random.randint(1,2)
+                        elesel_vagy_kastelyjegy= random.randint(1,10)
                         match elesel_vagy_kastelyjegy:
                             case 1:
                                 eventek2.elesik()
@@ -86,6 +87,31 @@ def menu3():
                             case 2:
                                 eventek2.kastelyjegy()
                                 kastelyjegy += 1
+                            case 3:
+                                eventek2.elesik()
+                                eletero -= 5
+                            case 4:
+                                eventek2.elesik()
+                                eletero -= 5
+                            case 5:
+                                eventek2.elesik()
+                                eletero -= 5
+                            case 6:
+                                eventek2.elesik()
+                                eletero -= 5
+                            case 7:
+                                eventek2.elesik()
+                                eletero -= 5
+                            case 8:
+                                eventek2.elesik()
+                                eletero -= 5
+                            case 9:
+                                eventek2.elesik()
+                                eletero -= 5
+                            case 10:
+                                eventek2.elesik()
+                                eletero -= 5
+
                 energia -=2
                 visszaugras300 = 1
                 while visszaugras300 != 0:
@@ -218,7 +244,6 @@ def menu3():
                         print ('\t4 - Édesség bolt meglátogatása')
                         prRed ('\t5 - Kilépés')
                         if visszaugras3 == 1:
-                            print('\n')
                             print('──────────────────────────────────────────────────────────────────────────────────────────')
                             prPurple('Egyenesen mentél tovább, és egy szerencsekerékhez értél.')
                             print('──────────────────────────────────────────────────────────────────────────────────────────')
@@ -282,6 +307,7 @@ def menu3():
                                         kastelyjegy = 1
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                 print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                print('Opciók:')
                                 print('\t 1 - Igen')
                                 prRed('\t 2 - Nem')
                                 print('──────────────────────────────────────────────────────────────────────────────────────────')

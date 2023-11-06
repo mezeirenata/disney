@@ -93,7 +93,7 @@ def menu2():
                                             print('──────────────────────────────────────────────────────────────────────────────────────────')
                                             print('Opciók:')
                                             print('\t 1 - Adsz 5 db cukrot a kisgyereknek')
-                                            print('\t 1 - Nem adsz cukrot a kisgyereknek')
+                                            print('\t 2 - Nem adsz cukrot a kisgyereknek')
                                             print('\t 3 - Édességbolt (vegyél cukrot)')
                                             prRed('\t 4 - Kilépés')
                                             print('──────────────────────────────────────────────────────────────────────────────────────────')
@@ -281,9 +281,7 @@ def menu2():
                     print('\t3 - Egyél édességet (növeld meg az energiaszinted)')
                     print ('\t4 - Édesség bolt meglátogatása')
                     prRed ('\t5 - Kilépés')
-                    print('\n')
                     if visszaugras3 == 1:
-                        print('\n')
                         print('──────────────────────────────────────────────────────────────────────────────────────────')
                         prPurple('Egyenesen mentél tovább, és egy szerencsekerékhez értél.')
                         print('──────────────────────────────────────────────────────────────────────────────────────────')
@@ -347,6 +345,7 @@ def menu2():
                                     kastelyjegy = 1
                                     stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                             print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            print('Opciók:')
                             print('\t 1 - Igen')
                             prRed('\t 2 - Nem')
                             print('──────────────────────────────────────────────────────────────────────────────────────────')
