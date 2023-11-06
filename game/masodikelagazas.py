@@ -181,7 +181,7 @@ def menu2():
                                     prRed('Nem kértél bocsánatot, ezért beárult az anyukájának, aki pedig rád hívta az őröket.')
                                     prRed('A játéknak vége.')
                                     print('──────────────────────────────────────────────────────────────────────────────────────────')
-                                    break
+                                    exit()
                 case 2:
                     print('──────────────────────────────────────────────────────────────────────────────────────────')
                     prLightPurple(f'Energia szinted:{energia}')

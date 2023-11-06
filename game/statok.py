@@ -44,7 +44,9 @@ def stat(eletero,player_ATK,player_DEF,energia,arany,cukor):
         #HP
         print(f'HP: {eletero} ', end = ' ')
         for i in range(1, eletero + 1):
-            if i % 1 == 0 and eletero > 7:
+            if i % 1 == 0 and eletero > 10:
+                prCyan("-")
+            elif i % 1 == 0 and eletero > 7 and eletero <= 10:
                 prGreen("-")
             elif i % 1 == 0 and eletero <= 7 and eletero > 4:
                 prYellow("-")
