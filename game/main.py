@@ -42,3 +42,4 @@ def main():
                     prRed('A játéknak vége.')
 
 main()
+ 

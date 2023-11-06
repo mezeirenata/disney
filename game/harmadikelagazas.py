@@ -37,9 +37,20 @@ def menu3():
                     case 1:
                         eventek2.furaillat()
                         energia -= 5
+
+                        if energia < 1:
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            prRed("Meghaltál. Elfogyott az energiád!")
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            exit()
                     case 2:
                         eventek2.furaillat2()
                         eletero -= 5
+                        if eletero < 1:
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            prRed("Meghaltál. Elfogyott az életerőd!")
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            exit()
                     case 3:
                         eventek2.normalisillat()
             case 2:
@@ -82,37 +93,19 @@ def menu3():
                         elesel_vagy_kastelyjegy= random.randint(1,10)
                         match elesel_vagy_kastelyjegy:
                             case 1:
-                                eventek2.elesik()
-                                eletero -= 5
-                            case 2:
                                 eventek2.kastelyjegy()
                                 kastelyjegy += 1
-                            case 3:
+                            case _:
                                 eventek2.elesik()
-                                eletero -= 5
-                            case 4:
-                                eventek2.elesik()
-                                eletero -= 5
-                            case 5:
-                                eventek2.elesik()
-                                eletero -= 5
-                            case 6:
-                                eventek2.elesik()
-                                eletero -= 5
-                            case 7:
-                                eventek2.elesik()
-                                eletero -= 5
-                            case 8:
-                                eventek2.elesik()
-                                eletero -= 5
-                            case 9:
-                                eventek2.elesik()
-                                eletero -= 5
-                            case 10:
-                                eventek2.elesik()
-                                eletero -= 5
+                                eletero -= 5  
+                                if eletero < 1:
+                                    prRed("Meghaltál. Elfogyott az életerőd!")
+                                    exit()                        
 
                 energia -=2
+                if energia < 1:
+                    prRed("Meghaltál. Elfogyott az energiád!")
+                    exit()
                 visszaugras300 = 1
                 while visszaugras300 != 0:
                     stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
@@ -234,6 +227,9 @@ def menu3():
                     prPurple('Egyenesen mentél tovább')
                     print('──────────────────────────────────────────────────────────────────────────────────────────')
                     energia -= 1
+                    if energia < 1:
+                        prRed("Meghaltál. Elfogyott az energiád!")
+                        exit()
                     visszaugras3 = 1
                     while visszaugras3 != 0:
                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
@@ -258,6 +254,9 @@ def menu3():
                         match mitteszel:
                             case 1:
                                 energia -= 1
+                                if energia < 1:
+                                    prRed("Meghaltál. Elfogyott az energiád!")
+                                    exit()
                                 szerencsekerek = random.randint(1,6)
                                 match szerencsekerek:
                                     case 1:
@@ -328,6 +327,9 @@ def menu3():
                                         while belepsz_vagy_nem > 2 or belepsz_vagy_nem < 1:
                                             belepsz_vagy_nem = int(input('Hogyan döntesz? '))
                                         energia -= 1
+                                        if energia < 1:
+                                            prRed("Meghaltál. Elfogyott az energiád!")
+                                            exit()
                                         match belepsz_vagy_nem:
                                             case 1:
                                                 stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
@@ -405,6 +407,9 @@ def menu3():
                             case 2:
                                 stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                 energia -= 1
+                                if energia < 1:
+                                    prRed("Meghaltál. Elfogyott az energiád!")
+                                    exit()
                                 print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 eventek2.szk0()
                                 print('──────────────────────────────────────────────────────────────────────────────────────────')
@@ -432,6 +437,9 @@ def menu3():
                                     while belepsz_vagy_nem > 2 or belepsz_vagy_nem < 1:
                                         belepsz_vagy_nem = int(input('Hogyan döntesz? '))
                                     energia -= 1
+                                    if energia < 1:
+                                        prRed("Meghaltál. Elfogyott az energiád!")
+                                        exit()
                                     match belepsz_vagy_nem:
                                         case 1:
                                             stat(eletero,player_ATK,player_DEF,energia,arany,cukor)

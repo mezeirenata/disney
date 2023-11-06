@@ -243,7 +243,7 @@ def kastely5():
 def elesik():
     prPurple('Az erős szél miatt elestél, és lehorzsoltad a könyököd.')
     print('\t----------')
-    prRed('\t - 3 HP')
+    prRed('\t - 5 HP')
     print('\t----------')
     print('──────────────────────────────────────────────────────────────────────────────────────────')
 
