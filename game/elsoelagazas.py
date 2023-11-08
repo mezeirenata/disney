@@ -344,7 +344,7 @@ def menu1():
                                                     print('\n')
                                                     prGreen('Sikeresen kijátszottad a játékot, az utadat szabadon folytathatod a kastélyban!') 
                                                 else:
-                                                    print('\n')
+                                                    
                                                     print('──────────────────────────────────────────────────────────────────────────────────────────')
                                                     prPurple('Beléptél a kastélyba, viszont ahhoz hogy beljebb mehess venned kell egy jegyet!')
                                                     print('')
