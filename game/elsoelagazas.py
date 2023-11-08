@@ -418,8 +418,10 @@ def menu1():
                                 arany += 15
                                 stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                 print('\n')
+                                print('Opciók:')
                                 print('\t 1 - Igen')
                                 prRed('\t 2 - Nem')
+                                print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 folytatas1 = 0
                                 while folytatas1 > 2 or folytatas1 < 1:
                                     folytatas1 = int(input('Folytatod a játékot? '))
