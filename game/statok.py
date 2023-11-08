@@ -42,7 +42,7 @@ def stat(eletero,player_ATK,player_DEF,energia,arany,cukor):
         else:
             print('──────────────────────────────────────────────────────────────────────────────────────────')
         #HP
-        print(f'HP: {eletero} ', end = ' ')
+        print(f'HP: {eletero}      ', end = ' ')
         for i in range(1, eletero + 1):
             if i % 1 == 0 and eletero > 10:
                 prCyan("-")
@@ -56,8 +56,6 @@ def stat(eletero,player_ATK,player_DEF,energia,arany,cukor):
             prRed(" !!! ")
         print()
         #HP
-        print(f'\tSebzés: {player_ATK}')
-        print(f'\tVédekezés: {player_DEF}')
         #energia
         print(f'Energia: {energia} ', end = ' ')
         for i in range(1, energia + 1):

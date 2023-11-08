@@ -15,6 +15,7 @@ def main():
     cukor = 0
     valasztas = 7
     visszaugras = 1
+    os.system("cls")
     print('──────────────────────────────────────────────────────────────────────────────────────────')
     prPurple('A híres és varázslatos DisneyLand bejáratánál tartózkodsz.')
     prPurple('Célod eljutni a kastélyba, anélkül hogy kirúgnának onnan.')
@@ -28,8 +29,8 @@ def main():
     print('Mit szeretnél csinálni? ')
     print('──────────────────────────────────────────────────────────────────────────────────────────')
     while valasztas >4 or valasztas <1:
-            valasztas = int(input('Válassz! '))
-    print('\n')
+        valasztas = int(input('Válassz! '))
+    os.system("cls")
     match valasztas:
             case 1: 
                     menu1()

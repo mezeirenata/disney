@@ -228,7 +228,8 @@ def kastely3():
 def kastely4():
     print('\n')
     print('──────────────────────────────────────────────────────────────────────────────────────────')
-    prRed('Mivel úgy döntöttél, hogy maradsz a kastélyban és beljebb mész jegy nélkül, az őrök eltávolítottak a kastélyból')
+    prRed('Mivel úgy döntöttél, hogy maradsz a kastélyban és beljebb mész jegy nélkül, az őrök') 
+    prRed('eltávolítottak a kastélyból.')
     prRed('\t A játéknak vége.')
     print('──────────────────────────────────────────────────────────────────────────────────────────')
 
