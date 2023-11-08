@@ -21,8 +21,12 @@ def menu1():
     if eletero > 0 and energia > 0:
         visszaugras2 = 1
         energia -= 1
+        if energia < 1:
+            print('──────────────────────────────────────────────────────────────────────────────────────────')
+            prRed("Meghaltál. Elfogyott az energiád!")
+            print('──────────────────────────────────────────────────────────────────────────────────────────')
+            exit()
         while visszaugras2 >0 and eletero > 0:
-            print('\n')
             stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
             print('──────────────────────────────────────────────────────────────────────────────────────────')
             print('Opciók:')
@@ -39,16 +43,31 @@ def menu1():
                         eventek2.egyenes1()
                         prRed('\t-3 HP')
                         eletero -= 3
+                        if eletero < 1:
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            prRed("Meghaltál. Elfogyott az életerőd!")
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            exit()
                     case 2:
                         print('──────────────────────────────────────────────────────────────────────────────────────────')
                         eventek2.egyenes2()
                         prRed('\t-1 HP')
                         eletero -= 1
+                        if eletero < 1:
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            prRed("Meghaltál. Elfogyott az életerőd!")
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            exit()
                     case 3:
                         print('──────────────────────────────────────────────────────────────────────────────────────────')
                         eventek2.egyenes3()
                         prRed('\t-5 HP')
                         eletero -= 5
+                        if eletero < 1:
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            prRed("Meghaltál. Elfogyott az életerőd!")
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            exit()
                 prPurple('A történtek után elérkeztél a szökőkúthoz.')
                 print('──────────────────────────────────────────────────────────────────────────────────────────')
             elif visszaugras2 == 2:
@@ -58,9 +77,9 @@ def menu1():
             visszaugras2 = 0
             while valasztas_case_1 < 1 or valasztas_case_1 >5:
                 valasztas_case_1 = int(input('Mit szeretnél csinálni? '))
+            os.system("cls")
             match valasztas_case_1:
                 case 1:
-                    print('\n')
                     kedvesvagyelijeszt = random.randint(1,2)
                     match kedvesvagyelijeszt:
                         case 1:
@@ -70,6 +89,11 @@ def menu1():
                             print('──────────────────────────────────────────────────────────────────────────────────────────')
                         case 2:
                             eletero -= 1
+                            if eletero < 1:
+                                print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                prRed("Meghaltál. Elfogyott az életerőd!")
+                                print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                exit()
                             print('──────────────────────────────────────────────────────────────────────────────────────────')
                             eventek2.bohoc2()
                             print('──────────────────────────────────────────────────────────────────────────────────────────')
@@ -101,6 +125,11 @@ def menu1():
                             print('\t-------------')
                             cukor = 0
                         energia -=1
+                        if energia < 1:
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            prRed("Meghaltál. Elfogyott az energiád!")
+                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                            exit()
                 case 3:
                         print('──────────────────────────────────────────────────────────────────────────────────────────')
                         prLightPurple(f'Energia szinted:{energia}')
@@ -185,10 +214,16 @@ def menu1():
             print('──────────────────────────────────────────────────────────────────────────────────────────')
             tovabbmesz = 3
             while tovabbmesz > 2 or tovabbmesz < 1:
-                tovabbmesz = int(input('Tovább mész? ')) 
+                tovabbmesz = int(input('Tovább mész? '))
+            os.system("cls") 
             match tovabbmesz:
                 case 1:
                     energia -= 1
+                    if energia < 1:
+                        print('──────────────────────────────────────────────────────────────────────────────────────────')
+                        prRed("Meghaltál. Elfogyott az energiád!")
+                        print('──────────────────────────────────────────────────────────────────────────────────────────')
+                        exit()
                     visszaugras3 = 1
                     while visszaugras3 != 0:
                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
@@ -210,9 +245,15 @@ def menu1():
                         visszaugras3 = 0
                         while mitteszel >6 or mitteszel < 1:
                             mitteszel = int(input('Mit teszel? '))
+                        os.system("cls")
                         match mitteszel:
                             case 1:
                                 energia -= 1
+                                if energia < 1:
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                    prRed("Meghaltál. Elfogyott az energiád!")
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                    exit()
                                 szerencsekerek = random.randint(1,6)
                                 match szerencsekerek:
                                     case 1:
@@ -250,9 +291,6 @@ def menu1():
                                             vesztesz = arany
                                         print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         eventek2.szk5()
-                                        print('\t-----------')
-                                        prRed(f'\t -{vesztesz} arany ')
-                                        print('\t-----------')
                                         print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                     case 6:
@@ -269,6 +307,7 @@ def menu1():
                                 folytatas1 = 0
                                 while folytatas1 > 2 or folytatas1 < 1:
                                     folytatas1 = int(input('Folytatod a játékot? '))
+                                os.system("cls")
                                 match folytatas1:    
                                     case 1:
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
@@ -282,7 +321,13 @@ def menu1():
                                         belepsz_vagy_nem = 5
                                         while belepsz_vagy_nem > 2 or belepsz_vagy_nem < 1:
                                             belepsz_vagy_nem = int(input('Hogyan döntesz? '))
+                                        os.system("cls")
                                         energia -= 1
+                                        if energia < 1:
+                                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                            prRed("Meghaltál. Elfogyott az energiád!")
+                                            print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                            exit()
                                         match belepsz_vagy_nem:
                                             case 1:
                                                 stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
@@ -309,6 +354,7 @@ def menu1():
                                                         veszeljegy = 3
                                                         while veszeljegy > 2 or veszeljegy < 1:
                                                             veszeljegy = int(input('Veszel jegyet? '))
+                                                        
                                                             match veszeljegy:
                                                                 case 1:
                                                                     arany -= 60
@@ -332,6 +378,7 @@ def menu1():
                                                         maradsz_e = 3
                                                         while maradsz_e > 2 or maradsz_e < 1:
                                                             maradsz_e = int(input('Választásod: '))
+                                                        os.system("cls")
                                                         match maradsz_e:
                                                             case 1:
                                                                 print('\n')
@@ -360,6 +407,11 @@ def menu1():
                             case 2:
                                 stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                 energia -= 1
+                                if energia < 1:
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                    prRed("Meghaltál. Elfogyott az energiád!")
+                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                    exit()
                                 print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 eventek2.szk0()
                                 print('──────────────────────────────────────────────────────────────────────────────────────────')
@@ -371,6 +423,7 @@ def menu1():
                                 folytatas1 = 0
                                 while folytatas1 > 2 or folytatas1 < 1:
                                     folytatas1 = int(input('Folytatod a játékot? '))
+                                os.system("cls")
                                 if folytatas1 == 1:
                                     print('\n')
                                     stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
@@ -385,7 +438,13 @@ def menu1():
                                     belepsz_vagy_nem = 3
                                     while belepsz_vagy_nem > 2 or belepsz_vagy_nem < 1:
                                         belepsz_vagy_nem = int(input('Hogyan döntesz? '))
+                                    os.system("cls")
                                     energia -= 1
+                                    if energia < 1:
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                        prRed("Meghaltál. Elfogyott az energiád!")
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                        exit()
                                     match belepsz_vagy_nem:
                                         case 1:
                                             stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
@@ -436,6 +495,7 @@ def menu1():
                                                     maradsz_e = 3
                                                     while maradsz_e > 2 or maradsz_e < 1:
                                                         maradsz_e = int(input('Választásod: '))
+                                                    os.system("cls")
                                                     match maradsz_e:
                                                         case 1:
                                                             eventek2.kileptel()
@@ -473,6 +533,7 @@ def menu1():
                                     meglatogatod_e = 0
                                     while meglatogatod_e >2 or meglatogatod_e < 1:
                                         meglatogatod_e = int(input('Meglátogatod? '))
+                                    os.system("cls")
                                     match meglatogatod_e:
                                         case 1: 
                                             print('\n')
