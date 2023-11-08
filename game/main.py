@@ -48,8 +48,7 @@ def main():
             case 4:
                     print('\n')
                     prRed('A játéknak vége.')
-            case _:
-                  prRed("Nem igaz hogy akkora degenerált fasz vagy hogy nem tudsz megnyomni egy 1est vagy 2est vagy 3ast vagy 4est. Hogy a faszba jutottál ide? Csak nem tesztelsz minket?!?!??!?!?!?!??!???! ")
+            
             
 main()
  
