@@ -28,8 +28,15 @@ def main():
     print('──────────────────────────────────────────────────────────────────────────────────────────')
     print('Mit szeretnél csinálni? ')
     print('──────────────────────────────────────────────────────────────────────────────────────────')
-    while valasztas >4 or valasztas <1:
+    while valasztas >4 or valasztas <1 :
         valasztas = int(input('Válassz! '))
+        if valasztas == 69:
+                print('──────────────────────────────────────────────────────────────────────────────────────────')
+                prPurple("Találkozol pár varázspónival meg Disney szereplőkkel. Jól beszívtok majd olyan")
+                prPurple("tömegsexet nyomtok hogy ihaj meg a csuhaj. Mindenki kifekszik és kibasznak a faszba.")
+                prGreen("Vége a játéknak. Easter egg ending.")
+                print('──────────────────────────────────────────────────────────────────────────────────────────')
+                exit()
     os.system("cls")
     match valasztas:
             case 1: 
@@ -41,6 +48,7 @@ def main():
             case 4:
                     print('\n')
                     prRed('A játéknak vége.')
-
+            
+            
 main()
  

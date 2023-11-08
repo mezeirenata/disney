@@ -262,7 +262,7 @@ def menu3():
                                 if energia < 1:
                                     prRed("Meghaltál. Elfogyott az energiád!")
                                     exit()
-                                szerencsekerek = random.randint(1,6)
+                                szerencsekerek = random.randint(1,10)
                                 match szerencsekerek:
                                     case 1:
                                         if arany >= 15:
@@ -309,6 +309,12 @@ def menu3():
                                         eventek2.szk6()
                                         print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         kastelyjegy = 1
+                                        stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
+                                    case _:
+                                        arany = 0
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
+                                        eventek2.szk1()
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                 print('──────────────────────────────────────────────────────────────────────────────────────────')
                                 print('Opciók:')
