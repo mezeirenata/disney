@@ -123,7 +123,7 @@ def kedvesember():
     print('\n')
     print('──────────────────────────────────────────────────────────────────────────────────────────')
     prGreen('Úgy döntöttél, hogy beljebb mész a kastélyba jegy nélkül, azonban őrök kezdtek haladni feléd.')
-    prGreen('Szerencsére egy másik ember észrevette az őröket, és kedvességből adott neked egy kastély jegyet. ')
+    prGreen('Szerencsére egy másik ember észrevette az őröket, és kedvességből adott neked egy kastélyjegyet. ')
     prGreen('\t Kijátszottad a játékot, az utadat szabadon folytathatod a kastélyban!')
     print('──────────────────────────────────────────────────────────────────────────────────────────')
 
@@ -237,7 +237,7 @@ def kastely5():
     print('\n')
     print('──────────────────────────────────────────────────────────────────────────────────────────')
     prGreen('Úgy döntöttél, hogy beljebb mész a kastélyba jegy nélkül, azonban őrök kezdtek haladni feléd.')
-    prGreen('Szerencsére egy másik ember észrevette az őröket, és kedvességből adott neked egy kastély jegyet. ')
+    prGreen('Szerencsére egy másik ember észrevette az őröket, és kedvességből adott neked egy kastélyjegyet. ')
     prGreen('\t Kijátszottad a játékot, az utadat szabadon folytathatod a kastélyban!')
     print('──────────────────────────────────────────────────────────────────────────────────────────')
 
