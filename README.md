@@ -4,14 +4,18 @@ A játékos Disneyland bejáratánál kezdi a játékot, és az a cél hogy elju
 
 ---
 ### Artúr
-  ##### ★ *Eventek* 
+  ##### ★ *Események* 
+  ##### ★ *Bug fix*
+  ##### ★ *Kisebb változtatás a játék kinézetén*
 ---
 ### Bálint
   ##### ★ *Statisztika*
-  ##### ★ *Html segítség*
+  ##### ★ *Bug fix*
+  ##### ★ *Színek*
 ---
 ### Reni
   ##### ★ *Menü*
   ##### ★ *Weboldal*
   ##### ★ *Main*
+  ##### ★ *Terv + ReadME.md*
 
