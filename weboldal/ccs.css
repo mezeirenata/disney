@@ -81,3 +81,20 @@
 button.accordion-button:focus{
     box-shadow: inherit;
 }
+.stroke{
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.471);
+}
+.buttonuwu{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.35);
+    cursor:default;
+    transition: 0.5s;
+}
+.buttonuwu:hover{
+    cursor:pointer;
+    background-size:250px;
+    transition: 0.5s;
+}
+a{
+    text-decoration:none ;
+    color:white;
+}
