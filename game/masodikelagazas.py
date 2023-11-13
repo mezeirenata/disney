@@ -17,14 +17,12 @@ def menu2():
     cukor = 0
     kastelyjegy = 0
     if eletero > 0 and energia > 0:
-        print('\n')
+        prPurple('Balra mentél, és egy kisebb séta után találkoztál Magdi jósnénivel.')
+        prPurple('Magdi néni behívott a sátrába, hogy megjósolja a jövőd. Elfogadod?')
         print('──────────────────────────────────────────────────────────────────────────────────────────')
         print('Opciók:')
         print('\t 1 - Elfogadod')
         print('\t 2 - Elutasítod')
-        print('──────────────────────────────────────────────────────────────────────────────────────────')
-        prPurple('Balra mentél, és egy kisebb séta után találkoztál Magdi jósnénivel.')
-        prPurple('Magdi néni behívott a sátrába, hogy megjósolja a jövőd. Elfogadod?')
         print('──────────────────────────────────────────────────────────────────────────────────────────')
         energia -= 1
         if energia < 1:
@@ -99,14 +97,13 @@ def menu2():
                         case 1:
                             #elesik
                             print('\n')
+                            prPurple('Egyenesen mentél tovább Magdi néni sátrától, de mielőtt megközelíthetted volna a szökőkutat az útvégén, ')
+                            prPurple('megbotlottál egy kisgyerekben véletlenül, és elesett.')
                             stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                             print('──────────────────────────────────────────────────────────────────────────────────────────')
                             print('Opciók:')
                             print('\t 1 - Felsegíted')
                             print('\t 2 - Nem segíted fel')
-                            print('──────────────────────────────────────────────────────────────────────────────────────────')
-                            prPurple('Egyenesen mentél tovább Magdi néni sátrától, de mielőtt megközelíthetted volna a szökőkutat az útvégén, ')
-                            prPurple('megbotlottál egy kisgyerekben véletlenül, és elesett.')
                             print('──────────────────────────────────────────────────────────────────────────────────────────')
                             mitteszel = 3
                             while mitteszel > 2 or mitteszel < 1:
@@ -117,16 +114,14 @@ def menu2():
                                         visszaugras2 = 1
                                         while visszaugras2 == 1:
                                             visszaugras2 = 0
-                                            print('\n')
+                                            prPurple('Úgy döntöttél, hogy felsegíted a kisgyereket. Miután felsegítetted, megegyeztetek hogy pár cukorért')
+                                            prPurple('cserébe nem árul be az anyukájának.')
                                             print('──────────────────────────────────────────────────────────────────────────────────────────')
                                             print('Opciók:')
                                             print('\t 1 - Adsz 5 db cukrot a kisgyereknek')
                                             print('\t 2 - Nem adsz cukrot a kisgyereknek')
                                             print('\t 3 - Édességbolt (vegyél cukrot)')
                                             prRed('\t 4 - Kilépés')
-                                            print('──────────────────────────────────────────────────────────────────────────────────────────')
-                                            prPurple('Úgy döntöttél, hogy felsegíted a kisgyereket. Miután felsegítetted, megegyeztetek hogy pár cukorért')
-                                            prPurple('cserébe nem árul be az anyukájának.')
                                             print('──────────────────────────────────────────────────────────────────────────────────────────')
                                             adsz_neki=5
                                             while adsz_neki >4 or adsz_neki < 1:
@@ -410,13 +405,12 @@ def menu2():
                             os.system("cls")
                             match folytatas1:    
                                 case 1:
+                                    prPurple('Miután részt vettél a szerencsekerekezésben, megláttad a kastélyt és elindultál felé.')
+                                    prPurple('Egy kisebb séta után elérkeztél a kastély bejáratához. ')
                                     stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                     print('Opciók:')
                                     print('\t 1 - Belépsz a kastélyba ')
                                     prRed('\t 2 - Nem lépsz be a kastélyba')
-                                    print('──────────────────────────────────────────────────────────────────────────────────────────')
-                                    prPurple('Miután részt vettél a szerencsekerekezésben, megláttad a kastélyt és elindultál felé.')
-                                    prPurple('Egy kisebb séta után elérkeztél a kastély bejáratához. ')
                                     print('──────────────────────────────────────────────────────────────────────────────────────────')
                                     belepsz_vagy_nem = 5
                                     while belepsz_vagy_nem > 2 or belepsz_vagy_nem < 1:
