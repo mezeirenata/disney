@@ -19,12 +19,13 @@ def menu3():
     mennyienergia = 0
     kastelyjegy = 0
     if eletero > 0 and energia > 0:
+        print('──────────────────────────────────────────────────────────────────────────────────────────')
+        prPurple('A kezdőpontodtól jobbra mentél, és megláttál egy csomó virágot az út mellett. ')
+        print('──────────────────────────────────────────────────────────────────────────────────────────')
         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
         print('Opciók:')
         print('\t 1 - Megvizsgálod őket')
         print('\t 2 - Kihagyod a lehetőséget, és továbbmész')
-        print('──────────────────────────────────────────────────────────────────────────────────────────')
-        prPurple('A kezdőpontodtól jobbra mentél, és megláttál egy csomó virágot az út mellett. ')
         print('──────────────────────────────────────────────────────────────────────────────────────────')
         megszagolod = 3
         while megszagolod >2 or megszagolod < 1:
@@ -211,14 +212,13 @@ def menu3():
                 jatekvege = -1
 ###innentől ugyanaz
         if jatekvege != -1:
-            print('\n')
+            prPurple('Megérkeztél a szökőkúthoz, innen az utad csak egyenesen visz tovább.')
+            print('──────────────────────────────────────────────────────────────────────────────────────────')
             stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
             print('──────────────────────────────────────────────────────────────────────────────────────────')
             print('Opciók:')
             print('\t 1 - Igen')
             prRed('\t 2 - Nem (-> kilépés)')
-            print('──────────────────────────────────────────────────────────────────────────────────────────')
-            prPurple('Megérkeztél a szökőkúthoz, innen az utad csak egyenesen visz tovább.')
             print('──────────────────────────────────────────────────────────────────────────────────────────')
             tovabbmesz = 3
             while tovabbmesz > 2 or tovabbmesz < 1:
@@ -299,10 +299,6 @@ def menu3():
                                             vesztesz = arany
                                         print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         eventek2.szk5()
-                                        print('\t-----------')
-                                        prRed(f'\t -{vesztesz} arany ')
-                                        print('\t-----------')
-                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                     case 6:
                                         print('──────────────────────────────────────────────────────────────────────────────────────────')
@@ -327,13 +323,13 @@ def menu3():
                                 os.system("cls")
                                 match folytatas1:    
                                     case 1:
+                                        prPurple('Miután részt vettél a szerencsekerekezésben, megláttad a kastélyt és elindultál felé.')
+                                        prPurple('Egy kisebb séta után elérkeztél a kastély bejáratához. ')
+                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         stat(eletero,player_ATK,player_DEF,energia,arany,cukor)
                                         print('Opciók:')
                                         print('\t 1 - Belépsz a kastélyba ')
                                         prRed('\t 2 - Nem lépsz be a kastélyba')
-                                        print('──────────────────────────────────────────────────────────────────────────────────────────')
-                                        prPurple('Miután részt vettél a szerencsekerekezésben, megláttad a kastélyt és elindultál felé.')
-                                        prPurple('Egy kisebb séta után elérkeztél a kastély bejáratához. ')
                                         print('──────────────────────────────────────────────────────────────────────────────────────────')
                                         belepsz_vagy_nem = 5
                                         while belepsz_vagy_nem > 2 or belepsz_vagy_nem < 1:
